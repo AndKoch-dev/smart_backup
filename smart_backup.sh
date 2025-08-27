@@ -14,9 +14,9 @@ logfile="$backup_dir/backup.log"
 infofile="$backup_dir/info.log"
 errorfile="$backup_dir/backup.err"
 
-: > "$logfile"
-: > "$infofile"
-: > "$errorfile"
+>> "$logfile"
+>> "$infofile"
+>> "$errorfile"
 
 send_report() {
 {
